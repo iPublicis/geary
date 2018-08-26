@@ -71,8 +71,7 @@ public class Geary.ConnectivityManager : BaseObject {
 				cancellable
 			);
         } catch (Error err) {
-            if (err is IOError.NETWORK_UNREACHABLE &&
-				this.monitor.network_available) {
+            if (err is IOError.NETWORK_UNREACHABLE) {
 				// If we get a network unreachable error, but the monitor
 				// says there actually is a network available, we may be
 				// running in a Flatpak and hitting Bug 777706. If so,
