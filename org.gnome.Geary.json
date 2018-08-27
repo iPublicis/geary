@@ -1,6 +1,7 @@
 /* flatpak-builder config for Geary. */
 {
     "app-id": "org.gnome.Geary",
+    "branch": "0.12",
     "runtime": "org.gnome.Platform",
     "runtime-version": "3.28",
     "sdk": "org.gnome.Sdk",
@@ -99,7 +100,7 @@
                 {
                     "type": "git",
                     "url": "https://git.gnome.org/browse/geary",
-                    "branch": "geary-0.12"
+                    "branch": "wip/82-flatpak-network-monitor-redux"
                 }
             ]
         }
